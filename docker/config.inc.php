@@ -14,10 +14,12 @@
  *   MAIL_CA_FILE           development only: a CA file to trust for the mail server
  */
 
+$config = [];
+
 $secret = static function (string $name): string {
     $value = @file_get_contents("/run/roundcube/{$name}");
     if ($value === false || trim($value) === '') {
-        throw new RuntimeException("Roundcube secret {$name} is missing");
+        throw new \RuntimeException("Roundcube secret {$name} is missing");
     }
 
     return trim($value);
@@ -25,7 +27,7 @@ $secret = static function (string $name): string {
 
 $host = getenv('MAIL_HOSTNAME') ?: '';
 if ($host === '') {
-    throw new RuntimeException('MAIL_HOSTNAME is not set');
+    throw new \RuntimeException('MAIL_HOSTNAME is not set');
 }
 $master = $secret('mail_master_password');
 
