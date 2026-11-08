@@ -1,0 +1,15 @@
+{
+	"name": "Portfolio",
+	"extends": "elastic",
+	"author": "Kaio Fernandes, based on Elastic by Aleksander Machniak",
+	"license": "Creative Commons Attribution-ShareAlike",
+	"license-url": "http://creativecommons.org/licenses/by-sa/3.0/",
+	"config": {
+		"dark_mode_support": true,
+		"additional_logo_types": []
+	},
+	"meta": {
+		"theme-color": "#ffffff",
+		"msapplication-navbutton-color": "#ffffff"
+	}
+}

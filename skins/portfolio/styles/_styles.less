@@ -1,0 +1,24 @@
+/**
+ * Portfolio skin: extra styles for Elastic.
+ *
+ * Elastic imports styles/_styles.less at the end of styles.less when it exists
+ * (skins/elastic/README.md, "Skin color palette changes ... via _styles.less and
+ * _variables.less"). The image build copies this file and _variables.less into
+ * skins/elastic/styles/ before compiling Elastic (docker/Dockerfile).
+ *
+ * Licensed under CC BY-SA 3.0, like Elastic.
+ */
+
+// The website's font stack (body in static/css/style.css of the portfolio repo).
+// Elastic calls this mixin wherever it sets a font; this definition comes last,
+// so its declaration wins in the compiled CSS.
+.font-family {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+// Dark theme: Elastic colours the Compose button with @color-main, the light
+// theme's gold (#806c00), which is too dark on the dark task menu. Use the
+// website's dark-mode gold instead.
+html.dark-mode #taskmenu .action-buttons a {
+    color: #d4a843;
+}

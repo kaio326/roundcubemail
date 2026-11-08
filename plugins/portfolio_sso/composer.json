@@ -1,0 +1,16 @@
+{
+    "name": "kaio326/portfolio_sso",
+    "description": "Signs members in to Roundcube with their portfolio website session, through a trusted gateway and a Dovecot master user.",
+    "type": "roundcube-plugin",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Kaio Fernandes",
+            "role": "Lead"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "roundcube/plugin-installer": ">=0.1.3"
+    }
+}

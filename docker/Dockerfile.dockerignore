@@ -1,0 +1,13 @@
+# Build context for docker/Dockerfile (BuildKit reads <Dockerfile>.dockerignore).
+.git
+.github
+node_modules
+plugins/*/node_modules
+vendor
+temp/*
+!temp/.htaccess
+logs/*
+!logs/.htaccess
+config/config.inc.php
+skins/*/styles/*.min.css
+program/js/*.min.js

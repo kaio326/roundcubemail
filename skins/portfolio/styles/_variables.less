@@ -1,0 +1,47 @@
+/**
+ * Portfolio skin: Elastic's colour variables (skins/elastic/styles/colors.less)
+ * set from the portfolio website's tokens (static/css/style.css, :root and
+ * body.dark-mode). Only what differs from Elastic is listed.
+ *
+ * Elastic imports styles/_variables.less at the end of variables.less when it
+ * exists; LESS variables are lazy, so these definitions win. The image build
+ * copies this file into skins/elastic/styles/ before compiling Elastic.
+ *
+ * Licensed under CC BY-SA 3.0, like Elastic.
+ */
+
+// Light theme (:root)
+@color-main:                #806c00; // --primary-color
+@color-main-dark:           #494009; // --secondary-color
+@color-black:               #000000; // --text-dark
+@color-link:                #806c00; // --primary-color
+@color-link-hover:          #6b5a00; // --primary-hover
+@color-error:               #ef4444; // --error
+@color-success:             #10b981; // --success
+
+@color-list-selected-background:    tint(@color-main, 85%);
+@color-list-focus-indicator:        @color-main;
+
+// The vertical task menu: the site's dark olive with gold actions.
+@color-taskmenu-background:                 #494009; // --secondary-color
+@color-taskmenu-button-action:              #d4a843; // dark-mode --primary-color
+@color-taskmenu-button-action-hover:        #d4a843;
+
+// Dark theme (body.dark-mode)
+@color-dark-main:           #806c00; // button and checkbox fill, under light text
+@color-dark-background:     #2a2a2a; // --bg-white
+@color-dark-font:           #e5e5e5; // --text-dark
+@color-dark-border:         #3a3a3a; // --border-color
+@color-dark-hint:           #a0a0a0; // --text-light
+
+@color-dark-list-selected:              #d4a843; // --primary-color
+@color-dark-list-selected-background:   #3a3a3a;
+@color-dark-list-border:                #333333;
+
+@color-dark-input-background:           #1a1a1a; // --bg-light
+@color-dark-input-addon-background:     #3a3a3a;
+
+@color-dark-popover-background:         #1a1a1a; // --bg-light
+@color-dark-popover-border:             #3a3a3a;
+
+@color-dark-scrollbar-thumb:            #a88b2f; // --secondary-color

@@ -1,0 +1,12 @@
+<?php
+
+// File holding the secret the website's gate sends in X-Portfolio-Mail-Key.
+// At least 32 bytes. When it is missing or shorter, every request gets HTTP 503.
+$config['portfolio_sso_key_file'] = '/run/secrets/webmail_sso_key';
+
+// Website page that frames webmail. A main webmail view opened as the top-level
+// page is sent here, with the current view in ?view=.
+$config['portfolio_sso_frame_url'] = '/userdashboard/email';
+
+// Website dashboard, linked from the "mail is unavailable" page.
+$config['portfolio_sso_dashboard_url'] = '/userdashboard';
